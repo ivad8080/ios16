@@ -1,0 +1,64 @@
+:root {
+  --red: rgba(150, 30, 30, 100%);
+  --green: rgba(30, 150, 30, 100%);
+  --blue: rgba(30, 30, 150, 100%);
+  --yellow: rgb(150, 150, 0);
+  --purple: rgb(150, 0, 150);
+  --grey: rgb(150, 150, 150);
+  --darkgrey: rgba(30, 30, 30);
+}
+
+* {
+  outline: 1px dashed rgba(255, 255, 255, 50%);
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--grey);
+  background-color: var(--purple);
+}
+
+.wrapper {
+  display: flex;
+  background-color: var(--yellow);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container main {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  color: var(--darkgrey);
+}
+
+.box {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  padding: 50px;
+  margin: 50px;
+}
+
+.box1 {
+  background: var(--red);
+}
+
+.box2 {
+  box-sizing: border-box;
+  background: var(--green);
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+}
